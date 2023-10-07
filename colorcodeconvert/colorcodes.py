@@ -1,0 +1,2 @@
+HEX = "HEX"
+RGB = "RGB"
