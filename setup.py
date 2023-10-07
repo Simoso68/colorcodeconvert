@@ -16,7 +16,6 @@ setup(
     url=metadata["source"],
     license=metadata["license"],
     keywords=["color", "hex", "rgb"],
-    py_modules=["colorcodeconvert"],
     classifiers=[
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Intended Audience :: Developers",
@@ -32,5 +31,9 @@ setup(
         "Operating System :: OS Independent",
         "Natural Language :: English"
     ],
+    project_urls={
+        "Source":"https://github.com/Simoso68/colorcodeconvert",
+        "Issues":"https://github.com/Simoso68/colorcodeconvert/issues"
+    },
     python_requires=">=3.6"
 )
