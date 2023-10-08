@@ -33,7 +33,8 @@ setup(
     ],
     project_urls={
         "Source":"https://github.com/Simoso68/colorcodeconvert",
-        "Issues":"https://github.com/Simoso68/colorcodeconvert/issues"
+        "Issues":"https://github.com/Simoso68/colorcodeconvert/issues",
+        "Documentation":"https://github.com/Simoso68/colorcodeconvert/wiki"
     },
     python_requires=">=3.6"
 )
