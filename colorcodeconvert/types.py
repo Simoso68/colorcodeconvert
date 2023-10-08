@@ -13,14 +13,16 @@ class HexCode():
             if not hexchar in ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "a", "b", "c", "d", "e", "f"):
                 raise HexFormatError("at least one character in the HexCode isn't a Base16 character")
         # Initialization
-        self._value = str(value)
+        self._value = str(value).upper()
     def string(self):
         """
         Returns the set HexCode as a string.
         """
         return str(self._value)
     def __str__(self) -> str:
-        return self._value.upper()
+        return self._value
+    def __repr__(self) -> str:
+        return self.__str__()
     
 class RgbCode():
     def __init__(self, red, green, blue):
@@ -55,3 +57,5 @@ class RgbCode():
         return {"red":self._value[0], "green":self._value[1], "blue":self._value[2]}
     def __str__(self) -> str:
         return f"({self._value[0]}, {self._value[1]}, {self._value[2]})"
+    def __repr__(self) -> str:
+        return self.__str__()
