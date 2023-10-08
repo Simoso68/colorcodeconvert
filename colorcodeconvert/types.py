@@ -11,6 +11,11 @@ class HexCode():
             raise HexFormatError(f"HexCode values usually are 7 characters long not {len(str(value))}")
         # Initialization
         self._value = str(value)
+    def string(self):
+        """
+        Returns the set HexCode as a string.
+        """
+        return str(self._value)
     def __str__(self) -> str:
         return self._value.upper()
     
@@ -23,5 +28,20 @@ class RgbCode():
         if not isinstance(blue, int):
             raise TypeError(f"RgbCode blue value can only be 'int' not '{type(blue).__name__}'")
         self._value = (red, green, blue)
+    def array(self):
+        """
+        Returns the set RgbCode as a tuple.
+        """
+        return self._value
+    def string(self):
+        """
+        Returns the set RgbCode as a string.
+        """
+        return f"({self._value[0]}, {self._value[1]}, {self._value[2]})"
+    def values(self):
+        """
+        Returns the set RgbCode as a dict.
+        """
+        return {"red":self._value[0], "green":self._value[1], "blue":self._value[2]}
     def __str__(self) -> str:
         return f"({self._value[0]}, {self._value[1]}, {self._value[2]})"
