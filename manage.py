@@ -8,7 +8,7 @@ if system() != "Linux":
 
 for arg in argv[1:]:
     if arg == "clean":
-        run(["rm", "-rf", "colorcodeconvert/__pycache__", "dist", "build", "*.egg-info"])
+        run(["rm", "-rf", "colorcodeconvert/__pycache__", "dist", "build", "colorcodeconvert.egg-info"])
     elif arg == "build":
         run(["python3", "setup.py", "sdist", "bdist_wheel"])
     elif arg == "release":
