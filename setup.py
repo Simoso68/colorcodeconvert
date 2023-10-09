@@ -15,7 +15,8 @@ setup(
     maintainer=metadata["author"],
     url=metadata["source"],
     license=metadata["license"],
-    keywords=["color", "hex", "rgb"],
+    keywords=["color", "hex", "rgb", "conversion"],
+    packages=["colorcodeconvert"],
     classifiers=[
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Intended Audience :: Developers",
@@ -36,5 +37,5 @@ setup(
         "Issues":"https://github.com/Simoso68/colorcodeconvert/issues",
         "Documentation":"https://github.com/Simoso68/colorcodeconvert/wiki"
     },
-    python_requires=">=3.6"
+    python_requires=">=3.6",
 )
