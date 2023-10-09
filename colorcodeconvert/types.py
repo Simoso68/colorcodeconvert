@@ -10,7 +10,9 @@ class HexCode():
         if len(str(value)) != 7:
             raise HexFormatError(f"HexCode values usually are 7 characters long not {len(str(value))}")
         for hexchar in value[1:]:
-            if not hexchar in ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "a", "b", "c", "d", "e", "f"):
+            if not hexchar in ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
+                               "A", "B", "C", "D", "E", "F", 
+                               "a", "b", "c", "d", "e", "f"):
                 raise HexFormatError("at least one character in the HexCode isn't a Base16 character")
         # Initialization
         self._value = str(value).upper()
@@ -26,6 +28,7 @@ class HexCode():
     
 class RgbCode():
     def __init__(self, red, green, blue):
+        # checking hex code
         if not isinstance(red, int):
             raise TypeError(f"RgbCode red value can only be 'int' not '{type(red).__name__}'")
         if not isinstance(green, int):
@@ -34,11 +37,12 @@ class RgbCode():
             raise TypeError(f"RgbCode blue value can only be 'int' not '{type(blue).__name__}'")
         
         if red < 0 or red > 255:
-            raise RgbFormatError(f"red parameter can only be an integer from 0 to 255")
+            raise RgbFormatError("red parameter can only be an integer from 0 to 255")
         if green < 0 or green > 255:
-            raise RgbFormatError(f"green parameter can only be an integer from 0 to 255")
+            raise RgbFormatError("green parameter can only be an integer from 0 to 255")
         if blue < 0 or blue > 255:
-            raise RgbFormatError(f"blue parameter can only be an integer from 0 to 255")
+            raise RgbFormatError("blue parameter can only be an integer from 0 to 255")
+        # Initialization
         self._value = (red, green, blue)
     def array(self):
         """

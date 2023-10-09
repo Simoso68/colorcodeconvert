@@ -20,7 +20,7 @@ from .errors import *
 
 metadata = {
     "title":"colorcodeconvert",
-    "version":"1.1.2",
+    "version":"1.1.3",
     "author":"Simoso68",
     "license":"GNU General Public License version 3",
     "source":"https://github.com/Simoso68/colorcodeconvert",

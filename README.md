@@ -29,6 +29,13 @@ from colorcodeconvert import *
 print(convert(RgbCode(160, 160, 160), HEX))
 ```
 
+## Links
+
+- [Source](https://github.com/Simoso68/colorcodeconvert)
+- [Documentation](https://github.com/Simoso68/colorcodeconvert/wiki)
+- [Open Issues](https://github.com/Simoso68/colorcodeconvert/issues)
+- [Open Pull Requests](https://github.com/Simoso68/colorcodeconvert/pulls)
+
 ## Credits
 
 README Badges made with [Shields.io](https://shields.io).

@@ -11,7 +11,7 @@ def convert(input, to):
         raise ConversionError("can not convert HexCode to HexCode")
     if isinstance(input, RgbCode) and to == RGB:
         raise ConversionError("can not convert RgbCode to RgbCode")
-    
+
     try:
         if isinstance(input, HexCode): # Convert Hex to Rgb
             sep = [input._value[1:][i:i+2] for i in range(0, len(input._value[1:]), 2)]
