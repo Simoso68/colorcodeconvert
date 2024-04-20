@@ -1,3 +1,3 @@
 from colorcodeconvert import *
 
-print(convert(HexCode(160, 160, 160), RGB))
+print(convert(HexCode("#A0A0A0"), RGB))
